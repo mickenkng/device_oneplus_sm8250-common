@@ -40,7 +40,6 @@ import android.view.WindowManager;
 import android.util.Log;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
-import com.havoc.support.preferences.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -48,6 +47,8 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
+import com.havoc.support.preferences.CustomSeekBarPreference;
+import com.havoc.support.preferences.SwitchPreference;
 
 import org.havoc.device.DeviceSettings.FileUtils;
 import org.havoc.device.DeviceSettings.doze.DozeSettingsActivity;
@@ -84,8 +85,8 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mMuteMedia;
     private Preference mKcal;
 
-    private ProperSeekBarPreference mVibratorStrengthPreference;
-    private ProperSeekBarPreference mFpsInfoTextSizePreference;
+    private CustomSeekBarPreference mVibratorStrengthPreference;
+    private CustomSeekBarPreference mFpsInfoTextSizePreference;
 
     private Vibrator mVibrator;
 
@@ -130,7 +131,7 @@ public class DeviceSettings extends PreferenceFragment
         mFpsInfoColor = (ListPreference) findPreference(KEY_FPS_INFO_COLOR);
         mFpsInfoColor.setOnPreferenceChangeListener(this);
 
-        mFpsInfoTextSizePreference = (ProperSeekBarPreference) findPreference(KEY_FPS_INFO_TEXT_SIZE);
+        mFpsInfoTextSizePreference = (CustomSeekBarPreference) findPreference(KEY_FPS_INFO_TEXT_SIZE);
         mFpsInfoTextSizePreference.setOnPreferenceChangeListener(this);
 
         mMuteMedia = (TwoStatePreference) findPreference(KEY_MUTE_MEDIA);
@@ -147,7 +148,7 @@ public class DeviceSettings extends PreferenceFragment
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 
-        mVibratorStrengthPreference =  (ProperSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
+        mVibratorStrengthPreference =  (CustomSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
         if (Utils.fileWritable(FILE_LEVEL)) {
             mVibratorStrengthPreference.setValue(sharedPrefs.getInt(KEY_VIBSTRENGTH,
                 Integer.parseInt(Utils.getFileValue(FILE_LEVEL, DEFAULT))));
