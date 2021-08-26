@@ -85,7 +85,7 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mMuteMedia;
     private Preference mKcal;
 
-    private CustomSeekBarPreference mVibratorStrengthPreference;
+    private VibratorStrengthPreference mVibratorStrengthPreference;
     private CustomSeekBarPreference mFpsInfoTextSizePreference;
 
     private Vibrator mVibrator;
@@ -148,7 +148,7 @@ public class DeviceSettings extends PreferenceFragment
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 
-        mVibratorStrengthPreference =  (CustomSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
+        mVibratorStrengthPreference =  (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
         if (Utils.fileWritable(FILE_LEVEL)) {
             mVibratorStrengthPreference.setValue(sharedPrefs.getInt(KEY_VIBSTRENGTH,
                 Integer.parseInt(Utils.getFileValue(FILE_LEVEL, DEFAULT))));
