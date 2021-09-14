@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.havoc.device.DeviceSettings.doze;
+package org.radiant.device.DeviceSettings.doze;
 
 import android.content.Context;
 import android.content.Intent;

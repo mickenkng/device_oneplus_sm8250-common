@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.havoc.device.DeviceSettings.kcal;
+package org.radiant.device.DeviceSettings.kcal;
 
 import java.io.File;
 import java.io.FileOutputStream;

@@ -16,7 +16,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.havoc.support.preferences.SwitchPreference
+    <com.radiant.support.preferences.SwitchPreference
         android:defaultValue="false"
         android:key="kcal_enabled"
         android:title="@string/kcal_enabled_title"
@@ -26,21 +26,21 @@
         android:key="cat_colormanagement"
         android:title="@string/cat_colormanagement">
 
-        <com.havoc.support.preferences.CustomSeekBarPreference
+        <com.radiant.support.preferences.CustomSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enabled"
             android:key="color_red"
             android:max="256"
             android:title="@string/color_red" />
 
-        <com.havoc.support.preferences.CustomSeekBarPreference
+        <com.radiant.support.preferences.CustomSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enabled"
             android:key="color_green"
             android:max="256"
             android:title="@string/color_green" />
 
-        <com.havoc.support.preferences.CustomSeekBarPreference
+        <com.radiant.support.preferences.CustomSeekBarPreference
             android:defaultValue="256"
             android:dependency="kcal_enabled"
             android:key="color_blue"
@@ -53,28 +53,28 @@
         android:key="cat_calibration"
         android:title="@string/cat_calibration">
 
-        <com.havoc.support.preferences.CustomSeekBarPreference
+        <com.radiant.support.preferences.CustomSeekBarPreference
             android:defaultValue="127"
             android:dependency="kcal_enabled"
             android:key="saturation"
             android:max="255"
             android:title="@string/saturation" />
 
-        <com.havoc.support.preferences.CustomSeekBarPreference
+        <com.radiant.support.preferences.CustomSeekBarPreference
             android:defaultValue="127"
             android:dependency="kcal_enabled"
             android:key="value"
             android:max="255"
             android:title="@string/value" />
 
-        <com.havoc.support.preferences.CustomSeekBarPreference
+        <com.radiant.support.preferences.CustomSeekBarPreference
             android:defaultValue="127"
             android:dependency="kcal_enabled"
             android:key="contrast"
             android:max="255"
             android:title="@string/contrast" />
 
-        <com.havoc.support.preferences.CustomSeekBarPreference
+        <com.radiant.support.preferences.CustomSeekBarPreference
             android:defaultValue="0"
             android:dependency="kcal_enabled"
             android:key="hue"

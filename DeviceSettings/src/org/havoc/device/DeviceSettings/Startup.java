@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import androidx.preference.PreferenceManager;
 
-import org.havoc.device.DeviceSettings.kcal.KCalSettings;
+import org.radiant.device.DeviceSettings.kcal.KCalSettings;
 
 public class Startup extends BroadcastReceiver {
 
@@ -42,7 +42,7 @@ public class Startup extends BroadcastReceiver {
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));
        }
-        org.havoc.device.DeviceSettings.doze.Utils.checkDozeService(context);
+        org.radiant.device.DeviceSettings.doze.Utils.checkDozeService(context);
         DeviceSettings.restoreVibStrengthSetting(context);
         KCalSettings.restore(context);
     }

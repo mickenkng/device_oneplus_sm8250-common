@@ -15,16 +15,16 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.Toast;
-import com.havoc.support.preferences.CustomSeekBarPreference;
+import com.radiant.support.preferences.CustomSeekBarPreference;
 
-import com.havoc.support.R;
+import com.radiant.support.R;
 
 public class VibratorStrengthPreference extends CustomSeekBarPreference {
 

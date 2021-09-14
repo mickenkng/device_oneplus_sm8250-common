@@ -1,4 +1,4 @@
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;

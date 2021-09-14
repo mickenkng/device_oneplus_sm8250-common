@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -25,7 +25,7 @@ import android.util.Log;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceViewHolder;
-import com.havoc.support.preferences.CustomSeekBarPreference;
+import com.radiant.support.preferences.CustomSeekBarPreference;
 
 public class AutoHBMThresholdPreference extends CustomSeekBarPreference {
 

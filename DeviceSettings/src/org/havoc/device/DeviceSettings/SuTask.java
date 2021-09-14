@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
-import org.havoc.device.DeviceSettings.R;
+import org.radiant.device.DeviceSettings.R;
 
 public abstract class SuTask<Params> extends AsyncTask<Params, Void, Boolean> {
     private Context mContext;

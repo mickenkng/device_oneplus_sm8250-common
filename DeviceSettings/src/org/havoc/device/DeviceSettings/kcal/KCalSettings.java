@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.havoc.device.DeviceSettings.kcal;
+package org.radiant.device.DeviceSettings.kcal;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -23,11 +23,11 @@ import android.provider.Settings;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
-import com.havoc.support.preferences.SwitchPreference;
-import com.havoc.support.preferences.CustomSeekBarPreference;
-import com.havoc.support.preferences.SecureSettingListPreference;
+import com.radiant.support.preferences.SwitchPreference;
+import com.radiant.support.preferences.CustomSeekBarPreference;
+import com.radiant.support.preferences.SecureSettingListPreference;
 
-import org.havoc.device.DeviceSettings.R;
+import org.radiant.device.DeviceSettings.R;
 
 public class KCalSettings extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener, Utils {

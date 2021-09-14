@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -49,7 +49,7 @@ public class KeyHandler implements DeviceKeyHandler {
             VibrationEffect.get(VibrationEffect.EFFECT_DOUBLE_CLICK);
 
     public static final String CLIENT_PACKAGE_NAME = "com.oneplus.camera";
-    public static final String CLIENT_PACKAGE_PATH = "/data/misc/havoc/client_package_name";
+    public static final String CLIENT_PACKAGE_PATH = "/data/misc/radiant/client_package_name";
 
     private final Context mContext;
     private final AudioManager mAudioManager;

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.havoc.device.DeviceSettings.doze;
+package org.radiant.device.DeviceSettings.doze;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

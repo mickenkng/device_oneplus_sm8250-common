@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.app.ActivityManager;
 import android.app.AlertDialog;
@@ -47,13 +47,13 @@ import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
-import com.havoc.support.preferences.CustomSeekBarPreference;
-import com.havoc.support.preferences.SwitchPreference;
+import com.radiant.support.preferences.CustomSeekBarPreference;
+import com.radiant.support.preferences.SwitchPreference;
 
-import org.havoc.device.DeviceSettings.FileUtils;
-import org.havoc.device.DeviceSettings.doze.DozeSettingsActivity;
-import org.havoc.device.DeviceSettings.FPSInfoService;
-import org.havoc.device.DeviceSettings.kcal.KCalSettingsActivity;
+import org.radiant.device.DeviceSettings.FileUtils;
+import org.radiant.device.DeviceSettings.doze.DozeSettingsActivity;
+import org.radiant.device.DeviceSettings.FPSInfoService;
+import org.radiant.device.DeviceSettings.kcal.KCalSettingsActivity;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -212,7 +212,7 @@ public class DeviceSettings extends PreferenceFragment
             Boolean enabled = (Boolean) newValue;
             Utils.writeValue(HBMModeSwitch.getFile(), enabled ? "5" : "0");
             Intent hbmIntent = new Intent(this.getContext(),
-                    org.havoc.device.DeviceSettings.HBMModeService.class);
+                    org.radiant.device.DeviceSettings.HBMModeService.class);
             if (enabled) {
                 this.getContext().startService(hbmIntent);
             } else {

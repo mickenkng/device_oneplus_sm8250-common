@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.havoc.device.DeviceSettings.kcal;
+package org.radiant.device.DeviceSettings.kcal;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -23,7 +23,7 @@ import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-import org.havoc.device.DeviceSettings.R;
+import org.radiant.device.DeviceSettings.R;
 
 public class PresetDialog extends DialogFragment {
     private CharSequence[] mEntries;

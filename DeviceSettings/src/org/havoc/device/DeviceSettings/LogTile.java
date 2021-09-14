@@ -1,4 +1,4 @@
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
@@ -13,7 +13,7 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.IOException;
 
-import org.havoc.device.DeviceSettings.R;
+import org.radiant.device.DeviceSettings.R;
 
 @TargetApi(24)
 public class LogTile extends TileService {

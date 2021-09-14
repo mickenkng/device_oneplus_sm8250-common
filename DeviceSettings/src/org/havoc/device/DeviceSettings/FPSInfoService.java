@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;

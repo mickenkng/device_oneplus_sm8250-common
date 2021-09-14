@@ -17,7 +17,7 @@
 *
 */
 
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.content.Context;
 import android.media.AudioManager;

@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.havoc.device.DeviceSettings.kcal;
+package org.radiant.device.DeviceSettings.kcal;
 
 public interface Utils {
     String PREF_ENABLED = "kcal_enabled";

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.havoc.device.DeviceSettings.doze;
+package org.radiant.device.DeviceSettings.doze;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -39,9 +39,9 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
-import com.havoc.support.preferences.SwitchPreference;
+import com.radiant.support.preferences.SwitchPreference;
 
-import org.havoc.device.DeviceSettings.R;
+import org.radiant.device.DeviceSettings.R;
 
 public class DozeSettingsFragment extends PreferenceFragment implements OnPreferenceChangeListener,
         CompoundButton.OnCheckedChangeListener {

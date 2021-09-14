@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.havoc.device.DeviceSettings;
+package org.radiant.device.DeviceSettings;
 
 import android.app.ActivityManager;
 import android.content.Intent;
@@ -38,7 +38,7 @@ public class FPSTileService extends TileService {
               (ActivityManager) getSystemService(this.ACTIVITY_SERVICE);
       for (ActivityManager.RunningServiceInfo service :
               manager.getRunningServices(Integer.MAX_VALUE)) {
-          if (org.havoc.device.DeviceSettings.FPSInfoService.class.getName().equals(
+          if (org.radiant.device.DeviceSettings.FPSInfoService.class.getName().equals(
                   service.service.getClassName())) {
               isShowing = true;
           }
@@ -48,7 +48,7 @@ public class FPSTileService extends TileService {
 
   @Override
   public void onClick() {
-      Intent fpsinfo = new Intent(this, org.havoc.device.DeviceSettings.FPSInfoService.class);
+      Intent fpsinfo = new Intent(this, org.radiant.device.DeviceSettings.FPSInfoService.class);
       if (!isShowing)
           this.startService(fpsinfo);
       else

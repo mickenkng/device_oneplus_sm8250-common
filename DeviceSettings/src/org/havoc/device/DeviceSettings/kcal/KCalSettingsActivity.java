@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.havoc.device.DeviceSettings.kcal;
+package org.radiant.device.DeviceSettings.kcal;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -23,7 +23,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import org.havoc.device.DeviceSettings.R;
+import org.radiant.device.DeviceSettings.R;
 
 public class KCalSettingsActivity extends Activity implements Utils {
 

@@ -17,7 +17,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:sharedUserId="android.uid.system"
-          package="org.havoc.device.DeviceSettings"
+          package="org.radiant.device.DeviceSettings"
           android:versionCode="2"
           android:versionName="2.0" >
 
@@ -62,7 +62,7 @@
         <activity android:name=".KeyHandler" />
 
         <receiver 
-            android:name="org.havoc.device.DeviceSettings.Startup" 
+            android:name="org.radiant.device.DeviceSettings.Startup" 
             android:enabled="true">
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -71,7 +71,7 @@
 
         <!-- DeviceSettings Tile -->
         <service
-            android:name="org.havoc.device.DeviceSettings.DeviceSettingsTileService"
+            android:name="org.radiant.device.DeviceSettings.DeviceSettingsTileService"
             android:icon="@drawable/ic_settings_device_qs"
             android:label="@string/device_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -83,7 +83,7 @@
 
         <!-- DozeSettings Activity -->
         <activity
-            android:name="org.havoc.device.DeviceSettings.doze.DozeSettingsActivity"
+            android:name="org.radiant.device.DeviceSettings.doze.DozeSettingsActivity"
             android:exported="true"
             android:label="@string/ambient_display_title"
             android:launchMode="singleTask" >
@@ -94,13 +94,13 @@
         </activity>
 
         <!-- Doze Service -->
-		<service android:name="org.havoc.device.DeviceSettings.doze.DozeService"
+		<service android:name="org.radiant.device.DeviceSettings.doze.DozeService"
                  android:permission="OneplusDozeService">
         </service>
 
         <!-- DozeSettings Tile -->
          <service
-            android:name="org.havoc.device.DeviceSettings.doze.DozeTileService"
+            android:name="org.radiant.device.DeviceSettings.doze.DozeTileService"
             android:icon="@drawable/ic_eye"
             android:label="@string/ambient_display_gestures_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -111,12 +111,12 @@
         </service>
 
         <!-- HBM Service -->
-        <service android:name="org.havoc.device.DeviceSettings.HBMModeService"
+        <service android:name="org.radiant.device.DeviceSettings.HBMModeService"
                  android:exported="false" />
 
         <!-- HBM Tile -->
         <service
-            android:name="org.havoc.device.DeviceSettings.HBMModeTileService"
+            android:name="org.radiant.device.DeviceSettings.HBMModeTileService"
             android:icon="@drawable/ic_hbm_mode"
             android:label="@string/tile_hbm_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -127,15 +127,15 @@
         </service>
 
         <!-- HBM Service -->
-        <service android:name="org.havoc.device.DeviceSettings.HBMModeService"
+        <service android:name="org.radiant.device.DeviceSettings.HBMModeService"
             android:exported="false" />
 
         <!-- Auto HBM Service -->
-        <service android:name="org.havoc.device.DeviceSettings.AutoHBMService"
+        <service android:name="org.radiant.device.DeviceSettings.AutoHBMService"
 		 android:exported="false" />
 
         <!-- FPS Info Service -->
-        <service android:name="org.havoc.device.DeviceSettings.FPSInfoService"
+        <service android:name="org.radiant.device.DeviceSettings.FPSInfoService"
                 android:exported="false">
         </service>
 
@@ -153,7 +153,7 @@
 
          <!-- KCalSettings Activity -->
         <activity
-            android:name="org.havoc.device.DeviceSettings.kcal.KCalSettingsActivity"
+            android:name="org.radiant.device.DeviceSettings.kcal.KCalSettingsActivity"
             android:exported="false"
             android:label="@string/advanced_settings_kcal">
 
@@ -165,7 +165,7 @@
 
         <!-- KCalSettings Tile -->
         <service
-            android:name="org.havoc.device.DeviceSettings.kcal.KCalTileService"
+            android:name="org.radiant.device.DeviceSettings.kcal.KCalTileService"
             android:icon="@drawable/ic_kcal"
             android:label="@string/device_kcal_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -177,7 +177,7 @@
 
         <!-- Log Tile -->
         <service
-            android:name="org.havoc.device.DeviceSettings.LogTile"
+            android:name="org.radiant.device.DeviceSettings.LogTile"
             android:icon="@drawable/ic_logtile"
             android:label="@string/quick_settings_log_tile_label"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -190,7 +190,7 @@
         <!-- Search Indexing -->
         <provider
             android:name=".ConfigPanelSearchIndexablesProvider"
-            android:authorities="org.havoc.device"
+            android:authorities="org.radiant.device"
             android:multiprocess="false"
             android:grantUriPermissions="true"
             android:permission="android.permission.READ_SEARCH_INDEXABLES"
